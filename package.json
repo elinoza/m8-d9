@@ -1,0 +1,40 @@
+{
+	"name": "LinkedIn-BW-M6",
+	"version": "1.0.0",
+	"description": "Linkedln API using MongoDB",
+	"main": "server.js",
+	"scripts": {
+		"start": "node ./src/server.js",
+		"dev": "nodemon ./src/server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mirelaekic/Linkedln-BW-M6.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/mirelaekic/Linkedln-BW-M6/issues"
+	},
+	"homepage": "https://github.com/mirelaekic/Linkedln-BW-M6#readme",
+	"dependencies": {
+		"cloudinary": "^1.23.0",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-list-endpoints": "^5.0.0",
+		"fs": "0.0.1-security",
+		"json2csv": "^5.0.5",
+		"fs-extra": "^9.1.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.11.13",
+		"mongoose-paginate-v2": "^1.3.13",
+		"multer": "^1.4.2",
+		"multer-storage-cloudinary": "^4.0.0",
+		"nodemon": "^2.0.7",
+		"puppeteer": "^5.5.0",
+		"query-to-mongo": "^0.10.1"
+	}
+}
