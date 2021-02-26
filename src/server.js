@@ -8,14 +8,20 @@ const postsRouter = require("./services/posts")
 const commentRouter = require("./services/comments")
 const experienceRouter = require("./services/experience")
 const jwt = require("jsonwebtoken")
+
 require("dotenv/config")
+
+
+const createSocketServer = require("./socket")
 const {
 	notFoundHandler,
 	badRequestHandler,
 	genericErrorHandler,
 } = require("./errorHandlers")
 
-server = express()
+const server = express()
+const httpServer = http.createServer(server)
+createSocketServer(httpServer)
 
 const port = process.env.PORT
 
